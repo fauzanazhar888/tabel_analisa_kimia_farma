@@ -1,17 +1,17 @@
-# 🧪 Analisis Data Penjualan dan Profit Kimia Farma (2020–2023)
+# Analisis Data Penjualan dan Profit Kimia Farma (2020–2023)
 
 Repository ini berisi **syntax SQL BigQuery** untuk pembuatan tabel analisa yang digunakan dalam dashboard interaktif di **Looker Studio**, dengan fokus pada data penjualan dan profit Kimia Farma tahun **2020–2023**.
 
 ---
 
-## 📂 Struktur File
+## Struktur File
 | Nama File | Deskripsi |
 |------------|------------|
 | `tabel_analisa_kimia_farma.sql` | Query utama untuk membuat tabel analisa dengan perhitungan *nett sales*, *nett profit*, dan *rating* berdasarkan data transaksi, produk, dan kantor cabang. |
 
 ---
 
-## 📊 Jenis Analisis dan Visualisasi
+## Jenis Analisis dan Visualisasi
 Dashboard di Looker Studio dengan memanfaatkan tabel analisa tersebut dapat menampilkan beberapa komponen utama sebagai berikut:
 
 - **Judul _Dashboard_**
@@ -28,7 +28,7 @@ Dashboard di Looker Studio dengan memanfaatkan tabel analisa tersebut dapat mena
   
 ---
 
-## ⚙️ Tools yang Digunakan
+## Tools yang Digunakan
 | Tool | Fungsi |
 |------|---------|
 | **Google BigQuery** | Mengelola dan mengeksekusi query analisa data |
@@ -37,17 +37,17 @@ Dashboard di Looker Studio dengan memanfaatkan tabel analisa tersebut dapat mena
 
 ---
 
-## 📅 Periode Data
+## Periode Data
 Data mencakup transaksi Kimia Farma dari tahun **2020 hingga 2023**, yang diolah untuk mendapatkan insight terkait performa penjualan, profit, dan rating per cabang/provinsi.
 
 ---
 
-## 👨‍💻 Author
+## Author
 **Fauzan Azhar**  
-📧 [github.com/fauzanazhar888](https://github.com/fauzanazhar888)  
-📊 Proyek: *Analisis Penjualan dan Profit Kimia Farma*
+[github.com/fauzanazhar888](https://github.com/fauzanazhar888)  
+Proyek: *Dashboard Penjualan dan Profit Kimia Farma 2020-2023*
 
 ---
 
-## 📝 Lisensi
+## Lisensi
 Proyek ini bersifat **terbuka (open source)** untuk tujuan pembelajaran dan eksplorasi data analitik.
