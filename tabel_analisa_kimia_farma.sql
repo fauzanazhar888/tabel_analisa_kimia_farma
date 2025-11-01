@@ -33,7 +33,7 @@ WITH base_data AS (
     -- Harga produk dikalikan (1 - diskon)
     (t.price * (1 - t.discount_percentage)) AS nett_sales,
     
-    -- 📈 Persentase Gross Laba berdasarkan kisaran harga produk
+    -- Persentase Gross Laba berdasarkan kisaran harga produk
     CASE
       WHEN p.price <= 50000 THEN 0.10       -- 10% untuk harga ≤ 50.000
       WHEN p.price <= 100000 THEN 0.15      -- 15% untuk harga ≤ 100.000
@@ -70,3 +70,4 @@ WITH base_data AS (
 -- Output akhir: seluruh kolom dari base_data
 SELECT * 
 FROM base_data;
+
