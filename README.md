@@ -25,7 +25,10 @@ Dashboard di Looker Studio dengan memanfaatkan tabel analisa tersebut dapat mena
 - **_Geo Map Profit_ Setiap Provinsi**
 - **Top 5 Total Produk Terjual**
 - **Proporsi _Profit_ dari Setiap Produk**
-  
+
+## Dashboard Interaktif
+[Klik link ini untuk melihat hasil Dashboard menggunakan Looker Studio](https://lookerstudio.google.com/reporting/51296fc4-89e1-4163-8c56-722f41ba1dca)
+
 ---
 
 ## Tools yang Digunakan
