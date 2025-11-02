@@ -14,7 +14,7 @@ WITH base_data AS (
   SELECT
     -- ID unik setiap transaksi
     t.transaction_id,
-  
+    
     -- ID cabang tempat transaksi dilakukan
     t.branch_id,
     
@@ -25,19 +25,21 @@ WITH base_data AS (
     p.product_id,
     p.product_name,
     p.price,
-  
-    -- Rating transaksi dari tabel transaksi
-    t.rating,
+
+    -- Rating dari transaksi dan rating dari kantor
+    t.rating AS rating_transaksi,
+    kf_kantor.rating AS rating_kantor,
     
     -- Tanggal transaksi
-    t.date
-  
+    t.date,
+
     -- Persentase diskon dari transaksi
     t.discount_percentage,
     
     -- Perhitungan Nett Sales:
     -- Harga produk dikalikan (1 - diskon)
     (t.price * (1 - t.discount_percentage)) AS nett_sales,
+    
     -- Persentase Gross Laba berdasarkan kisaran harga produk
     CASE
       WHEN p.price <= 50000 THEN 0.10       -- 10% untuk harga ≤ 50.000
@@ -46,6 +48,7 @@ WITH base_data AS (
       WHEN p.price <= 500000 THEN 0.25      -- 25% untuk harga ≤ 500.000
       ELSE 0.30                             -- 30% untuk harga > 500.000
     END AS persentase_gross_laba,
+    
     -- Perhitungan Nett Profit:
     -- Nett Sales dikalikan dengan Persentase Gross Laba
     (t.price * (1 - t.discount_percentage)) *
@@ -68,5 +71,3 @@ WITH base_data AS (
 -- Output akhir: seluruh kolom dari base_data
 SELECT * 
 FROM base_data;
-
-
