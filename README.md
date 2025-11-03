@@ -19,8 +19,8 @@ Dashboard di Looker Studio dengan memanfaatkan tabel analisa tersebut dapat mena
 - **_Filter Control_** (provinsi dan rentang tanggal)
 - **_Snapshot_ Data**
 - **Perbandingan Pendapatan Kimia Farma dari tahun ke tahun (_Time Series_)**
-- **Top 10 Total Transaksi Cabang Provinsi**
-- **Top 10 _Nett Sales_ Cabang Provinsi**
+- **Top 10 Provinsi Berdasarkan Total Transaksi**
+- **Top 10 Provinsi Berdasarkan Total Penjualan**
 - **Top 5 Cabang dengan Rating Kantor Tertinggi namun Rating Transaksi Terendah**
 - **_Geo Map Profit_ Setiap Provinsi**
 - **Top 5 Total Produk Terjual**
